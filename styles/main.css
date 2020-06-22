@@ -1,75 +1,102 @@
-*{
-    margin: 0;
-    padding: 0;
-    border: 0;
-    box-sizing: border-box;
-    
+
+
+
+body, html {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Tahoma, sans-serif;
+    background-color: grey;
 }
-
-body { 
-    background-color: #7159c1;
-}
-
-
-/* CONTAINER GRID  */
 
 .container{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* HD = HEADER
+IM = IMAGEM
+MP= MAPA
+RD= REDES
+NV= MENU */
+.grid-container{
+    width: 100%;
+    height: 100vh;
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 20vh 70vh 10vh;
+    grid-template-rows: 360px auto;
+    grid-template-areas: 
+    'hd im im'
+    'hd im im'
+    'mp rd nv';
     
+
+                         
 }
 
-.col-1{
-    background: yellow;
-    height: 100vh;
-   
+.header{
+    grid-area: hd;
+    background: #f1f1f1;
+    text-align: center;
 
-    
 }
 
-.col-2{
-    background: blue;
-    height: 100vh;
-    
-}
-.col-3{
-    background: orange;
-    height: 100vh;
-    
+#logo {
+    margin-top: 20px;
+
 }
 
-.linha-1{
-    background-color:#f9f9f9;
-    height: 304px;
+.textos{
+    margin-top: 35px;
 }
-
-.linha-1 img {
+.textos h1 + h2 {
     margin-top: 15px;
-    width: 64px;
-    height: 64px;
-    
 }
-.linha-2 {
-    background-color: pink;
-    height: 304px;
+.textos h2{
+    color: #FB5858;
+}
+
+.header-2{
+    border-top: 3px solid black;
+    padding: 30px;
+    margin-top: 70px;
+    color: #FB5858;
     
 }
 
-.linha-3{
-    height: 304px;
-    background-color: red;
-    
-    
-}
-
-#textos-linha-1 {
-    display: flex;
+.mapa{
+    grid-area: mp;
+    background-color: #FB5858;
+    color: white;
     align-items: center;
-    justify-content: space-between;
-    margin-right: 70px;
+
+    
+}
+.mapa h1{
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 45px;
 }
 
-#sub-titulo {
-    display: block;
+.imagem{
+    grid-area: im;
+    background-color: red;
+    background-image: url(/assets/imagem-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
+.imagem img{
+    width: 100%;
+}
+
+.redes{
+    grid-area: rd;
+    background-color: #1E1D1D;
+}
+.navigation{
+    grid-area: nv;
+    background-color: white;
+}
+
+
+
