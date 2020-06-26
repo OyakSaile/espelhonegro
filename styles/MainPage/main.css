@@ -1,0 +1,204 @@
+/* Começo da Definição do Grid Layout */
+
+
+/* HD = HEADER
+IM = IMAGEM
+MP= MAPA
+RD= REDES
+NV= MENU */
+
+.grid-container {
+    width: 100%;
+    height: 100vh;
+    display: grid;
+}
+
+
+/* Fim da Definição do Grid Layout */
+
+
+/* ICONES MOBILE DESABILITADOS NA VERSÃO DESKTOP */
+
+.icones-mobile {
+    display: none;
+}
+
+
+/* ICONES MOBILE DESABILITADOS NA VERSÃO DESKTOP */
+
+
+/* HEADER COM LOGO TITULO E SUBTITULO E PARAGRAFO */
+
+.header {
+    grid-area: hd;
+    background: #f1f1f1;
+    text-align: center;
+    flex: 1;
+}
+
+#logo {
+    margin-top: 80px;
+    margin-bottom: 35px;
+}
+
+.textos-header h1+h2 {
+    margin-top: 15px;
+}
+
+.textos-header h2 {
+    color: var(--blue-primary);
+}
+
+#p-header {
+    padding: 30px 15px;
+}
+
+
+/* HEADER COM LOGO TITULO E SUBTITULO */
+
+
+/* MAPA DA AFRICA TEXTO */
+
+.mapa {
+    grid-area: mp;
+    display: flex;
+    background-color: var(--blue-primary);
+    color: white;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+}
+
+
+/* MAPA DA AFRICA TEXTO */
+
+
+/* IMAGEM MAIN PAGE */
+
+.imagem {
+    grid-area: im;
+    background-image: url(/assets/imagem-back.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color: #1E1D1D;
+}
+
+
+/* IMAGEM MAIN PAGE FIM */
+
+
+/* SOCIAL MEDIAS DIV */
+
+.social {
+    grid-area: rd;
+    background-color: #1E1D1D;
+    color: white;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+#facebook {
+    background-image: url(/assets/facebook.svg);
+    background-repeat: no-repeat;
+    width: 20px;
+    height: 40px;
+}
+
+#instagram {
+    background-image: url(/assets/instagram.png);
+    background-repeat: no-repeat;
+    width: 40px;
+    height: 40px;
+}
+
+#twitter {
+    background-image: url(/assets/twitter.svg);
+    background-repeat: no-repeat;
+    width: 45px;
+    height: 36px;
+}
+
+
+/* SOCIAL MEDIAS DIV FIM */
+
+
+/* MENU DE NAVEGAÇÃO */
+
+.navigation {
+    grid-area: nv;
+    background-color: #1E1D1D;
+    display: flex !important;
+    justify-content: space-around;
+    align-items: center;
+}
+
+ul.menu {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+ul.menu>li {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul.menu li a {
+    color: white;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+    text-transform: uppercase;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+ul.menu li a span {
+    border-top: 4px solid #fff;
+    padding-top: 6px;
+}
+
+
+/* MENU DE NAVEGAÇÃO FIM */
+
+
+/*--------------ANIMAÇÕES------------ */
+
+.social:hover {
+    transition: 400ms;
+    background-color: #2f2e2e;
+    cursor: pointer;
+}
+
+ul.menu li a span:hover {
+    color: var(--blue-primary);
+    transition: 150ms;
+    border-top: 4px solid var(--blue-primary);
+}
+
+.mapa:hover {
+    background-color: #2995b3;
+    cursor: pointer;
+}
+
+.imagem:hover {
+    filter: grayscale(500);
+    transform: scale(0.9);
+    transition: 250ms;
+    cursor: pointer;
+}
+
+.navigation:hover {
+    transition: 400ms;
+    background-color: #2f2e2e;
+    cursor: pointer;
+}
+
+
+/*--------------ANIMAÇÕES FIM ------------ */
