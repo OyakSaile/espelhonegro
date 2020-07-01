@@ -1,138 +1,137 @@
-                /* RESPONSIVO DA PÁGINA MAIN */
-                
-                @media (max-width: 768px) {
-                    .grid-container {
-                        grid-template-areas: 'hd' 'im' 'mp' 'nv' 'rd';
-                        grid-template-columns: 1fr;
-                        grid-template-rows: auto 500px 150px 150px 80px;
-                    }
-                    /* MAPA DA AFRICA COMEÇO  */
-                    .mapa {
-                        padding-bottom: auto;
-                        justify-content: center;
-                        flex: 1;
-                    }
-                    /* MAPA DA AFRICA FIM  */
-                    /* #p-header {
+""
+/* RESPONSIVO DA PÁGINA MAIN */
+
+@media (max-width: 768px) {
+    .grid-container {
+        grid-template-areas: 'hd' 'im' 'mp' 'nv' 'rd';
+        grid-template-columns: 1fr;
+        grid-template-rows: auto 500px 150px 150px 80px;
+    }
+    /* MAPA DA AFRICA COMEÇO  */
+    .mapa {
+        padding-bottom: auto;
+        justify-content: center;
+        flex: 1;
+    }
+    /* MAPA DA AFRICA FIM  */
+    /* #p-header {
+display: none;
+} */
+    .social {
+        flex: 1;
+    }
+    /* MENUS DE NAVEGAÇÃO MOBILE VERSION */
+    .navigation {
+        display: none !important;
+    }
+    /* .imagem {
+display: none;
+} */
+    #nav-mobile {
+        background-color: white;
+        display: flex !important;
+        flex: 1;
+        align-items: center;
+        justify-content: space-around;
+    }
+    #about {
+        width: 50px;
+        height: 50px;
+    }
+    #login {
+        width: 50px;
+        height: 50px;
+    }
+    #works {
+        width: 50px;
+        height: 50px;
+    }
+    .imagem {
+        background-image: url(/assets/imagem-left.png);
+    }
+    /* MENUS DE NAVEGAÇÃO MOBILE VERSION FIM */
+}
+
+@media (min-width:768px) {
+    .grid-container {
+        grid-template-areas: 'hd hd' 'im im' 'mp nv' 'rd rd';
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: auto 500px 150px 80px;
+    }
+}
+
+@media ( min-width: 992px) {
+    .grid-container {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto auto 150px;
+        grid-template-areas: 'hd im im' 'hd im im' 'mp rd nv';
+    }
+}
+
+@media(min-width: 1000px) {
+    ul.menu li a span {
+        font-size: 18px;
+    }
+}
+
+@media (min-width:2000px) {
+    #logo {
+        width: 200px;
+    }
+    #titulo {
+        font-size: 3.0em;
+    }
+    #sub-titulo {
+        font-size: 2.8em;
+    }
+    #p-header {
+        font-size: 2em;
+    }
+    ul.menu li a span {
+        font-size: 1.5em;
+    }
+}
+
+
+/* LOGIN PAGE */
+
+@media (min-width:300px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+    .submit {
+        margin-top: 10px;
+        display: flex;
+        text-align: center;
+    }
+    .login form .submit input {
+        margin-bottom: 50px;
+    }
+    .login form .submit input a {
+        font-size: 2px;
+    }
+}
+
+@media(min-width:767px) {
+    .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+@media(min-width:768px) {
+    .wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+@media (max-width:296px) {
+    .right-box {
         display: none;
-    } */
-                    .social {
-                        flex: 1;
-                    }
-                    /* MENUS DE NAVEGAÇÃO MOBILE VERSION */
-                    .navigation {
-                        display: none !important;
-                    }
-                    /* .imagem {
-        display: none;
-    } */
-                    #nav-mobile {
-                        background-color: white;
-                        display: flex !important;
-                        flex: 1;
-                        align-items: center;
-                        justify-content: space-around;
-                    }
-                    #about {
-                        width: 50px;
-                        height: 50px;
-                    }
-                    #login {
-                        width: 50px;
-                        height: 50px;
-                    }
-                    #works {
-                        width: 50px;
-                        height: 50px;
-                    }
-                    .imagem {
-                        background-image: url(/assets/imagem-left.png);
-                    }
-                    /* MENUS DE NAVEGAÇÃO MOBILE VERSION FIM */
-                }
-                
-                @media (min-width:768px) {
-                    .grid-container {
-                        grid-template-areas: 'hd hd' 'im im' 'mp nv' 'rd rd';
-                        grid-template-columns: 1fr 2fr;
-                        grid-template-rows: auto 500px 150px 80px;
-                    }
-                }
-                
-                @media ( min-width: 992px) {
-                    .grid-container {
-                        grid-template-columns: repeat(3, 1fr);
-                        grid-template-rows: auto auto 150px;
-                        grid-template-areas: 'hd im im' 'hd im im' 'mp rd nv';
-                    }
-                }
-                
-                @media(min-width: 1000px) {
-                    ul.menu li a span {
-                        font-size: 18px;
-                    }
-                }
-                
-                @media (min-width:2000px) {
-                    #logo {
-                        width: 200px;
-                    }
-                    #titulo {
-                        font-size: 3.0em;
-                    }
-                    #sub-titulo {
-                        font-size: 2.8em;
-                    }
-                    #p-header {
-                        font-size: 2em;
-                    }
-                    ul.menu li a span {
-                        font-size: 1.5em;
-                    }
-                }
-                /* LOGIN PAGE */
-                
-                @media (min-width:300px) {
-                    .wrapper {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                    .submit {
-                        margin-top: 10px;
-                        display: flex;
-                        text-align: center;
-                    }
-                    .login form .submit input {
-                        margin-bottom: 50px;
-                    }
-                    .login form .submit input a {
-                        font-size: 2px;
-                    }
-                }
-                
-                @media(min-width:767px) {
-                    .wrapper {
-                        display: flex;
-                        flex-direction: column;
-                    }
-                }
-                
-                @media(min-width:768px) {
-                    .wrapper {
-                        display: flex;
-                        flex-direction: row;
-                    }
-                }
-                
-                @media (max-width:296px) {
-                    .right-box {
-                        display: none;
-                    }
-                }
-                /* LOGIN PAGE FIM */
-                /* HD = HEADER
-IM = IMAGEM
-MP= MAPA
-RD= REDES
-NV= MENU */
-                /* RESPONSIVO DA PÁGINA FIM */
+    }
+}
+
+
+/* RESPONSIVO DA PÁGINA FIM */

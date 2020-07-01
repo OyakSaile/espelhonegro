@@ -87,6 +87,10 @@ body {
     color: #1327a7;
 }
 
+.login form .submit {
+    align-items: baseline;
+}
+
 
 /* CAIXA DA ESQUERDA FIM */
 
