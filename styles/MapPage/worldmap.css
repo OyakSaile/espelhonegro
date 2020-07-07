@@ -1,0 +1,32 @@
+        body {
+            background-color: white !important;
+        }
+        
+        .container {
+            display: flex;
+            text-align: center;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100vw;
+            background-color: #F52C00;
+        }
+        
+        .map {
+            background: white;
+            width: 500px;
+            height: 500px;
+            text-align: center;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        
+        #svg2 {
+            height: 200px;
+            width: 200px;
+        }
+        
+        path:hover {
+            fill: blue;
+        }
